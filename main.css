@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Myfont1;
+  src: url(assets/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf)
+    format(truetype);
+}
+@font-face {
+  font-family: Myfont2;
+  font-weight: 300;
+  src: url(assets/Oswald/Oswald-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+  font-family: Myfont2, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+input[type="button"],
+input[type="submit"] {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ----HEADER---- */
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 85px;
+  background-image: url(assets/brewdogcrop.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.logo-link {
+  width: 30%;
+}
+
+.brewdog-logo {
+  object-fit: contain;
+  width: 100%;
+}
+
+.head {
+  font-family: MyFont1, sans-serif;
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
+.bi-chevron-down {
+  font-size: 2rem;
+  align-self: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+@keyframes nav-ease {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    height: 52px;
+    opacity: 1;
+  }
+}
+
+nav {
+  animation: nav-ease ease;
+  animation-duration: 0.2s;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-menu {
+  width: 70%;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.toplinks {
+  font-family: MyFont1, sans-serif;
+  font-variant-caps: all-small-caps;
+  text-decoration: none;
+  color: black;
+}
+
+.toplinks:hover::after:active {
+  color: inherit;
+}
+
+/* ----MAIN---- */
+
+main {
+  margin-top: 0;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* ----FOOTER---- */
+
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 85px;
+  background-image: url(assets/brewdogcrop.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.copyright {
+  align-self: center;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: right;
+  margin: 0.5rem;
+}
+
+.bi-facebook {
+  margin-right: 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.bi-instagram {
+  margin-right: 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.bi-twitter {
+  margin-right: 1rem;
+  color: black;
+  font-size: 2rem;
+}

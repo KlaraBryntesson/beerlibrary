@@ -1,0 +1,267 @@
+#headline-box {
+  width: 40%;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  padding-left: 3rem;
+}
+
+h1 {
+  margin-left: 2rem;
+}
+
+p {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+#beer-form-box {
+  margin: auto;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(217, 233, 238);
+  padding: 1rem;
+  height: 100%;
+  width: 50%;
+}
+
+#colour-box {
+  height: 100%;
+  width: 50%;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(217, 233, 238);
+}
+
+#beer-search-img {
+  height: 200%;
+  width: 80%;
+  margin-left: 2rem;
+  position: relative;
+  bottom: 70%;
+  border-radius: 10px;
+}
+
+#search-box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+#name-search {
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#search-field {
+  height: 3rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#search-field:focus {
+  border: solid 0.5px rgb(105, 178, 149, 0.8);
+}
+
+.abv {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Stylat checkboxarna med hjälp av: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#abv1 {
+  position: absolute;
+  margin-right: 0.5rem;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#abv2 {
+  position: absolute;
+  margin-right: 0.5rem;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.check {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.checkbox-container:hover input ~ .check {
+  background-color: rgb(105, 178, 149, 0.8);
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .check:after {
+  display: block;
+}
+
+.checkbox-container .check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(29, 29, 29);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#send {
+  height: 3rem;
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+  color: rgb(119, 119, 119);
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+#send:hover {
+  background-color: rgb(105, 178, 149, 0.8);
+  color: rgb(22, 22, 22);
+}
+
+#beer-results {
+  margin: auto;
+  margin-top: 4rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  padding-left: 4rem;
+}
+
+.product-box {
+  width: 65%;
+  align-self: center;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-tagline-container {
+  max-width: 70%;
+}
+
+.srm {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgb(49, 11, 12);
+}
+
+.product-name {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.food-pairings {
+  margin-bottom: 0.5rem;
+}
+
+.food-list {
+  list-style: none;
+}
+
+.food-items {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 0.3rem;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 400px;
+}
+
+.images {
+  height: 90%;
+  object-fit: cover;
+}
+
+hr {
+  margin-bottom: 2rem;
+  height: 1.5px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(220, 179, 74, 0),
+    rgb(220, 179, 74),
+    rgb(197, 121, 49),
+    rgb(220, 179, 74),
+    rgb(220, 179, 74, 0)
+  );
+}

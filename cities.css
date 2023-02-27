@@ -1,0 +1,282 @@
+#city-rubrik {
+  margin: 2rem;
+  margin-top: 5rem;
+  padding-left: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#city-form-box {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 350px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgb(217, 233, 238);
+}
+
+#form-container {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+#city-search {
+  margin: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#search-field {
+  width: 70%;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+#search-field:focus {
+  border: solid 0.5px rgb(105, 178, 149, 0.8);
+}
+
+#send-icon {
+  cursor: pointer;
+  margin: auto;
+  background-color: rgb(105, 178, 149, 0.3);
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 10%;
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+#send-icon:hover {
+  background-color: rgb(105, 178, 149, 0.8);
+}
+
+.bsc-search {
+  position: relative;
+  top: 4px;
+}
+
+#send {
+  display: none;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+#image-container {
+  width: 50%;
+}
+
+#city-image {
+  height: 160%;
+  width: 80%;
+  margin-left: 2rem;
+  position: relative;
+  bottom: 140px;
+  /* bottom: 45%; */
+  border-radius: 10px;
+}
+
+#add-form {
+  margin: 1rem;
+  width: 100%;
+}
+
+#add-name {
+  display: block;
+  width: 70%;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+#add-name:focus {
+  border: solid 0.5px rgb(105, 178, 149, 0.8);
+}
+
+#add-population {
+  width: 70%;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+#add-population:focus {
+  border: solid 0.5px rgb(105, 178, 149, 0.8);
+}
+
+#add-city-icon {
+  cursor: pointer;
+  background-color: rgb(105, 178, 149, 0.3);
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 10%;
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+#add-city-icon:hover {
+  background-color: rgb(105, 178, 149, 0.8);
+}
+
+.bsc-add-plus {
+  position: relative;
+  top: 4px;
+}
+
+#add-city {
+  display: none;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+#add-error {
+  margin: 2rem;
+  margin-left: 6rem;
+  background-color: rgb(194, 88, 43, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 190px;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#add-check {
+  animation: hide 0s ease 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin: 2rem;
+  margin-left: 6rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  background-color: rgb(105, 178, 149, 0.3);
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 10px;
+  width: 70px;
+}
+
+#city-results {
+  margin: 2rem;
+  margin-top: 4rem;
+  padding-left: 4rem;
+}
+
+.city-box {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.city-container {
+  align-self: flex-start;
+  width: 50%;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.city-name {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+}
+
+.population {
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.change {
+  margin-right: 1rem;
+  font-size: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: rgb(105, 178, 149, 0.4);
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+.change:hover {
+  background-color: rgb(105, 178, 149, 0.8);
+}
+
+.delete {
+  font-size: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: rgb(220, 179, 74, 0.5);
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+.delete:hover {
+  background-color: rgb(220, 179, 74);
+}
+
+.change-form {
+  align-self: flex-end;
+  height: 90%;
+  width: 40%;
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(105, 178, 149, 0.3);
+}
+
+.change-box {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.change-name {
+  height: 2.5rem;
+  border-radius: 7px;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.change-population {
+  margin-top: 1rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.change-button {
+  margin-top: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  background-color: rgb(105, 178, 149);
+  transition: 0.5s background-color ease, 0.5s color ease;
+}
+
+.change-button:hover {
+  background-color: rgb(89, 152, 127);
+}
+
+legend {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}

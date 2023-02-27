@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script async src="https://basicons.xyz/embed.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="cities.css" />
+    <title>Cities</title>
+    <meta
+      name="description"
+      content="Detta är en sida för att söka, lägga till, ändra och ta bort städer som finns i Avanceras cities-tjänst."
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo-box">
+          <a class="logo-link" href="index.html"
+            ><img
+              class="brewdog-logo"
+              src="assets/Brewdog-Logo-Transparent-PNG.png"
+              alt="brewdog logo"
+          /></a>
+          <p class="head">BEER LIBRARY</p>
+        </div>
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="toplinks" href="index.html">Home</a></li>
+          <li><a class="toplinks" href="beers.html">Beers</a></li>
+          <li>
+            <a class="toplinks" href="chart.html">Chart</a>
+          </li>
+          <li><a class="toplinks" href="cities.html">Cities</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="city-rubrik">
+        <h1>Cities-tjänsten</h1>
+        <p>Sök eller gör ändringar i Cities-tjänsten på denna sida.</p>
+      </div>
+
+      <div id="city-form-box">
+        <div id="form-container">
+          <form id="city-search">
+            <legend>Sök</legend>
+            <label for="city"></label>
+            <input id="search-field" name="city" placeholder="Sök stad" />
+            <label id="send-icon" for="send"><i class="bsc-search"></i></label>
+            <input id="send" name="send" type="submit" value="Sök" />
+          </form>
+
+          <form id="add-form">
+            <legend>Lägg till Stad</legend>
+            <label for="city"></label>
+            <input id="add-name" name="city" placeholder="Stadens namn" />
+            <label for="population"></label>
+            <input
+              id="add-population"
+              name="population"
+              placeholder="befolkningsmängd"
+            />
+            <label for="add-city" id="add-city-icon"
+              ><i class="bsc-add-plus"></i
+            ></label>
+            <input
+              name="add-city"
+              id="add-city"
+              type="submit"
+              value="Lägg till"
+            />
+          </form>
+        </div>
+
+        <div id="image-container">
+          <img
+            id="city-image"
+            src="assets/stories--BZPcpAtBQ0-unsplash.jpg"
+            alt="city"
+          />
+        </div>
+      </div>
+
+      <div id="add-check">Tillagd!</div>
+      <p id="add-error">Du måste fylla i båda fälten!</p>
+      <div id="city-results"></div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p class="copyright">
+          Copyright © Klara Bryntesson <span class="year"></span>
+        </p>
+        <div class="footer-div">
+          <a href="https://www.instagram.com/brewdogusa/"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/BrewDogIreland/"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://twitter.com/brewdog"
+            ><i class="bi bi-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cities.js"></script>
+  </body>
+</html>

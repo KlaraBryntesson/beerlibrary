@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="chart.css" />
+    <title>Beer Library - Chart</title>
+    <meta
+      name="description"
+      content="This chart shows three abv-ranges and how many beers BrewDog has in each range."
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo-box">
+          <a class="logo-link" href="index.html"
+            ><img
+              class="brewdog-logo"
+              src="assets/Brewdog-Logo-Transparent-PNG.png"
+              alt="brewdog logo"
+          /></a>
+          <p class="head">BEER LIBRARY</p>
+        </div>
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="toplinks" href="index.html">Home</a></li>
+          <li><a class="toplinks" href="beers.html">Beers</a></li>
+          <li>
+            <a class="toplinks" href="chart.html">Chart</a>
+          </li>
+          <li><a class="toplinks" href="cities.html">Cities</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="chart-head">
+        <div id="chart-info-box">
+          <h1>Chart</h1>
+          <p id="chart-info">
+            This is a chart showing the number of Brewdog beers in a certain
+            alcoholic range.
+          </p>
+          <input id="chart-button" type="button" value="Show chart" />
+        </div>
+        <div id="image-container">
+          <img
+            id="chart-image"
+            src="assets/Brewdog-BACKGROUND-Brand.jpg"
+            alt="Brewdog Can"
+          />
+        </div>
+      </div>
+
+      <div id="canvas-container">
+        <canvas id="abv-chart" width="400px" height="400px"></canvas>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p class="copyright">
+          Copyright © Klara Bryntesson <span class="year"></span>
+        </p>
+        <div class="footer-div">
+          <a href="https://www.instagram.com/brewdogusa/"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/BrewDogIreland/"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://twitter.com/brewdog"
+            ><i class="bi bi-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
