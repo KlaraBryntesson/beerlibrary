@@ -10,16 +10,19 @@
 }
 
 .introduction-box {
-  visibility: hidden;
+  width: 60%;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 
 .introduction-box > p {
   width: 80%;
 }
 
-#slide {
-  width: 60%;
-  margin-left: 10rem;
-  margin-bottom: 2rem;
-  visibility: visible;
+@media (max-width: 800px) {
+  .introduction-box {
+    width: 100%;
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
 }
