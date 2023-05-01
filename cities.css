@@ -75,7 +75,7 @@ p {
 }
 
 #city-image {
-  height: 160%;
+  aspect-ratio: 1/1;
   width: 80%;
   margin-left: 2rem;
   position: relative;
@@ -279,4 +279,47 @@ p {
 legend {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+}
+
+@media (max-width: 1000px) {
+  #form-container {
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  #image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #city-results {
+    padding-left: 0;
+  }
+
+  .city-container {
+    width: 90%;
+  }
+
+  .city-box {
+    flex-direction: column;
+  }
+
+  .change-form {
+    width: 90%;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  #form-container {
+    width: 100%;
+    margin-left: 0;
+    margin: auto;
+  }
+
+  #image-container {
+    display: none;
+  }
 }

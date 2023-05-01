@@ -17,19 +17,7 @@
   width: 80%;
 }
 
-@keyframes slideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
 #slide {
-  animation-name: slideLeft;
-  animation-duration: 1.5s;
   width: 60%;
   margin-left: 10rem;
   margin-bottom: 2rem;
